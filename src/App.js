@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { useEffect,useReducer } from 'react';
 function App() {
 
       const [value, twovalue] = useState(0);
