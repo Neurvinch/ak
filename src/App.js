@@ -6,11 +6,18 @@ function App() {
 
       const [value, twovalue] = useState(0);
   
+
+      
       const add =() =>{
             twovalue( (value) =>value +1);                           
-       
+      
     
       }
+      
+      const add2 = ()=>{
+        twovalue(value+2)
+      }
+
       
       
   return (
@@ -21,6 +28,15 @@ function App() {
      <div >
 {value}
      </div>
+
+
+
+     
+     <button
+    name='2x'
+       onClick={add2}
+/>
+
     </div>
   );
 }

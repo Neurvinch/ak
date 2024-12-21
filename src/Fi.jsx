@@ -11,6 +11,9 @@ const Fi = () => {
     const add =() =>{
           twovalue( value+1);                           
      
+          const add2 = ()=>{
+            twovalue(()=> value+2)
+          }
   
     }
     
@@ -24,6 +27,10 @@ const Fi = () => {
     <>
 <button 
    onClick={add}
+/>
+<button
+    name='2x'
+       onClick={add2}
 />
 
 
